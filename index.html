@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Center</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+    <script src="https://kit.fontawesome.com/ca7991e99c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- elemento da esquerda -->
+
+        <div class="busca">
+            <form id="buscar">
+                <input type="text" name="pesquisa" placeholder="Buscar...">
+                <button form="buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- elemento do meio-->
+
+        <div class="menu">
+            <img src="imagens/logo.png" alt="">
+            <h1>Guitar Center</h1>
+            <div class="teste">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- menu mobile -->
+
+        <div class="menuMobile">
+            <button id="btnMenuMobile" onclick="escondeMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="menuLinks">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li id="menuEntrar"><a href="entrar.html">Entrar</a></li>
+                <li id="menuCadastrar"><a href="cadastrar.html">Cadastre-se</a></li>
+                <li id="menuSair"><a href="#" onclick="logout()">Sair</a></li>
+            </ul>
+        </div>
+
+        <!-- elemento da direita-->
+
+        <div class="entrarcarrinho">
+            <div class="entrarNomeUsuario">
+                <a href="entrar.html" alt="Entre ou cadastre-se">
+                    <div id="entrarIcone"><i class="fa-regular fa-user"></i></div>
+                </a>
+                <p id="linkCarrinho"></p>
+                <p id="linkCarrinhoSair" onclick="logout()"></p>
+            </div>
+            <div id="carrinhoItens">
+                <a href="carrinho.html" alt="Carrinho de compras">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div id="carrinhoQtd"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--         CONTAINER 1        -->
+
+    <div id="grid-container1">
+        <div class="landing-page">
+            <h2>A guitarra que você vai dizer que sabe tocar</h2>
+
+            <h1>Porque todo músico precisa de uma guitarra para pendurar na parede</h1>
+
+            <p>Quer impressionar os amigos ou apenas fingir que vai aprender “Stairway to Heaven”? A <i>guitarra que você
+                vai dizer que sabe tocar</i> é o instrumento perfeito! Com visual matador e captores que você nem vai saber
+                como funcionam, é a escolha certa para aquele solo improvisado... Ou para acumular poeira com estilo.
+            </p>
+
+            <div class="landing-page-botoes">
+                <a href="produtos.html" class="btnVerProdutos">Ver todos os produtos</a>
+            </div>
+
+        </div>
+
+        <div class="landing-page-imagem">
+            <img src="imagens/guitarrona.png" alt="">
+        </div>
+
+    </div>
+
+    <!--         CONTAINER 2        -->
+
+    <div id="grid-container2">
+
+        <h1>Valores que prezamos</h1>
+
+        <div class="cardsValores">
+            <div class="card">
+                <i class="fa-fw fa-solid fa-truck"></i>
+                <p>
+                    <b>Entrega grátis</b><br>
+                    A partir de compras de R$ 9.999,00
+                </p>
+            </div>
+            <div class="card">
+                <i class="fa-fw fa-solid fa-coins"></i>
+                <p>
+                    <b>Cashback</b><br>
+                    Em quase nenhuma das compras
+                </p>
+            </div>
+            <div class="card">
+                <i class="fa-fw fa-solid fa-hand-holding-heart"></i>
+                <p>
+                    <b>Giftcard</b><br>
+                    Presenteie quem detesta música (sem reembolso!)
+                </p>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-lock"></i>
+                <p>
+                    <b>Dessegurança</b><br>
+                    Seu pagamento não é criptografado
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!--         CONTAINER 3        -->
+
+
+    <div id="grid-container3">
+        <h1>Onde estamos localizados</h1>
+
+        <div class="onde-estamos">
+
+            <div class="iframe-container">
+                <iframe title="Localização do Guitar Center"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383173.3182194694!2d-122.96631931249999!3d34.098209499999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bedea72814df%3A0x6fc5ebe5378635cb!2sGuitar%20Center!5e0!3m2!1spt-BR!2sbr!4v1727997440446!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="no" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+            <div class="container3texto">
+                <p>
+                    Somos apaixonados por música e acreditamos que os melhores sons nascem de produtos de
+                    qualidade. Nossa missão é conectar músicos com os instrumentos e acessórios que vão elevar suas
+                    performances, sempre com uma pitada de estilo e atitude.
+                <h2>
+                    Facilidades
+                </h2>
+
+                <ul>
+                    <li><i class="fa-fw fa-solid fa-square-parking"></i> Estacionamento Acessível</li>
+                    <li><i class="fa-fw fa-solid fa-dog"></i> Ambiente Pet Friendly</li>
+                    <li><i class="fa-fw fa-solid fa-children"></i> Brinquedoteca</li>
+                    <li><i class="fa-fw fa-solid fa-mug-hot"></i> Canto do café</li>
+                    <li><i class="fa-fw fa-solid fa-umbrella"></i> Chapelaria</li>
+                </ul>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="grid-container4">
+
+        <h1>O que nossos clientes pensam</h1>
+
+        <div class="clientes">
+
+
+            <div class="cliente">
+                <div class="rate">
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                </div>
+                <div class="depo">
+                    Comprei essas cordas de aço achando que ia finalmente conseguir tocar sem arrebentar a primeira
+                    corda no meio do meu solo épico... Bom, a corda ainda quebra, mas pelo menos agora tenho uma
+                    desculpa nova! Elas têm um som incrível (quando duram), mas estou começando a achar que o problema
+                    sou eu, e não elas.
+                </div>
+                <div class="iconNome">
+                    <div class="icon">
+                        <img src="imagens/joan.jpg" alt="">
+                    </div>
+                    <div class="nome">
+                        Joana
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cliente">
+                <div class="rate">
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                </div>
+                <div class="depo">
+                    O afinador digital que comprei é ótimo... pelo menos foi até ele começar a me dizer que minha
+                    guitarra está afinada, mesmo quando todos meus amigos insistem que não está. Estou começando a achar
+                    que ele tem um senso de humor melhor que o meu. De qualquer forma, é pequeno, prático e ainda assim
+                    me ajuda a achar a afinação, às vezes.
+                </div>
+                <div class="iconNome">
+                    <div class="icon">
+                        <img src="imagens/mick.jpg" alt="">
+                    </div>
+                    <div class="nome">
+                        Seu Micael
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cliente">
+                <div class="rate">
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                </div>
+                <div class="depo">
+                    Sabe aquele pedal de distorção que faz todo mundo pensar que você manja muito de guitarra? Pois é,
+                    comprei esse. Enquanto está desligado, parece que eu sei exatamente o que estou fazendo. Assim que
+                    ligo, é rock puro... até eu tocar o primeiro acorde errado. Se você quer parecer um astro antes de
+                    tocar, esse pedal é o caminho!
+                </div>
+                <div class="iconNome">
+                    <div class="icon">
+                        <img src="imagens/rita.jpg" alt="">
+                    </div>
+                    <div class="nome">
+                        Ritinha
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cliente">
+                <div class="rate">
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                </div>
+                <div class="depo">
+                    É isso mesmo, galera! Comprei essas baquetas achando que finalmente ia tocar igual ao baterista do
+                    Rush. Bom, ainda não sou ele, mas as baquetas são ótimas! Agora só falta aprender a tocar mais do
+                    que batucadas aleatórias... Mas pelo menos, com essas baquetas na mão, pareço bem mais profissional
+                    do que sou.
+                </div>
+                <div class="iconNome">
+                    <div class="icon">
+                        <img src="imagens/paul.jpg" alt="">
+                    </div>
+                    <div class="nome">
+                        Paulo
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cliente">
+                <div class="rate">
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                </div>
+                <div class="depo">
+                    Comprei esse amplificador achando que seria discreto o suficiente para praticar em casa. Bom, meus
+                    vizinhos agora têm certeza de que a minha carreira de rockstar é uma ameaça pública. O som é
+                    incrível, nítido e alto... talvez alto até demais. Mas ei, pelo menos agora todo mundo sabe que eu
+                    estou levando a música a sério. Valeu cada centavo (e cada reclamação)!
+                </div>
+                <div class="iconNome">
+                    <div class="icon">
+                        <img src="imagens/ann.jpg" alt="">
+                    </div>
+                    <div class="nome">
+                        Nânci
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="cliente">
+                <div class="rate">
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                    <i class="fa-fw fa-solid fa-star"></i>
+                </div>
+                <div class="depo">
+                    Decidi comprar esse teclado para finalmente aprender a tocar piano como um mestre. Resultado? Já
+                    estou craque em 'Parabéns pra Você' e algumas músicas que vêm com o modo demo. Ainda não sou o
+                    Beethoven, mas o teclado tem um som ótimo, e pelo menos impressiono na hora das festas de
+                    aniversário. Um dia, quem sabe, vou além do básico. Até lá, ele faz um bom papel de mesa para o
+                    café.
+                </div>
+                <div class="iconNome">
+                    <div class="icon">
+                        <img src="imagens/stevie.jpg" alt="">
+                    </div>
+                    <div class="nome">
+                        Stefany
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+    <!--              FOOOTER               -->
+
+    <footer>
+        <div class="footer1">
+            <h2>Guitar Center</h2>
+            <p>
+                A Guitar Center oferece instrumentos e acessórios de qualidade para músicos de todos os níveis, do pior ao menos pior.
+            </p>
+        </div>
+
+        <div class="footer2">
+            <h2>Contato</h2>
+            <p>contato@guitarcenter.com.br</p>
+            <p>100 Music St, California, CA, 01234, USB</p>
+            <p>(213) 555-7489</p>
+        </div>
+
+        <div class="footer3">
+            <h2>Redes sociais</h2>
+            <ul>
+                <a href="#" target="_blank">
+                    <li><i class="fa-fw fa-brands fa-facebook"></i></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><i class="fa-fw fa-brands fa-bluesky"></i></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><i class="fa-fw fa-solid fa-hashtag"></i></li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="footer4">
+            <hr>
+            <p>
+                © Guitar Center, 2024. Todos os direitos não-reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT JS -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guitar Center - Cadastre-se</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="icon" type="image/x-icon" href="imagens/favicon.ico">
+    <script src="https://kit.fontawesome.com/ca7991e99c.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <!-- elemento da esquerda -->
+
+        <div class="busca">
+            <form id="buscar">
+                <input type="text" name="pesquisa" placeholder="Buscar...">
+                <button form="buscar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+
+        <!-- elemento do meio-->
+
+        <div class="menu">
+            <img src="imagens/logo.png" alt="">
+            <h1>Guitar Center</h1>
+            <div class="teste">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="produtos.html">Produtos</a> </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- menu mobile -->
+
+        <div class="menuMobile">
+            <button id="btnMenuMobile" onclick="escondeMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <div id="menuLinks">
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="carrinho.html">Carrinho</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li id="menuEntrar"><a href="entrar.html">Entrar</a></li>
+                <li id="menuCadastrar"><a href="cadastrar.html">Cadastre-se</a></li>
+                <li id="menuSair"><a href="#" onclick="logout()">Sair</a></li>
+            </ul>
+        </div>
+
+        <!-- elemento da direita-->
+
+        <div class="entrarcarrinho">
+            <div class="entrarNomeUsuario">
+                <a href="entrar.html" alt="Entre ou cadastre-se">
+                    <div id="entrarIcone"><i class="fa-regular fa-user"></i></div>
+                </a>
+                <p id="linkCarrinho"></p>
+                <p id="linkCarrinhoSair" onclick="logout()"></p>
+            </div>
+            <div id="carrinhoItens">
+                <a href="carrinho.html" alt="Carrinho de compras">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div id="carrinhoQtd"></div>
+            </div>
+        </div>
+
+    </header>
+
+    <!--     CADASTRO    -->
+
+    <div id="cadastroConteiner">
+
+        <h1>Criar seu cadastro</h1>
+        <p>Crie seu cadastro e aproveite ofertas exclusivas, além de acompanhar seus pedidos com facilidade!</p>
+        <sub>* Campos obrigatórios</sub>
+
+        <form id="formCad" method="post" onsubmit="return validarCad('email', 'senha')">
+
+            <h2><i class="fa-fw fa-regular fa-user"></i> Dados pessoais</h2>
+
+            <label for="nome">* Nome completo</label>
+            <input type="text" name="nome" id="nome" required>
+
+            <label for="data_nasc">* Data de nascimento</label>
+            <input type="date" name="data_nasc" id="data_nasc">
+
+            <label for="cpf">* CPF</label>
+            <input type="number" name="cpf" id="cpf" placeholder="___.___.___-__">
+
+            <label for="telefone">* Telefone</label>
+            <input type="number" name="telefone" id="telefone" placeholder="(__)_____-____">
+
+            <label for="email">* E-mail</label>
+            <input type="email" name="email" id="email" maxlength="255" required>
+
+
+            <label for="senha">* Senha</label>
+            <input type="password" name="senha" id="senha" maxlength="30" required>
+
+            <label for="confirmarSenha">* Confirme a senha</label>
+            <input type="password" name="confirmarSenha" id="confirmarSenha" maxlength="30" required>
+
+
+
+            <h2><i class="fa-fw fa-solid fa-truck"></i> Dados para entrega</h2>
+
+            <label for="cep">* CEP</label>
+            <input type="number" name="cep" id="cep" min="0" placeholder="_____-___">
+
+            <label for="endereco">* Endereço</label>
+            <input type="text" name="endereco" id="endereco">
+
+            <label for="numero">* Número</label>
+            <input type="text" name="numero" id="numero">
+
+            <label for="complemento">Complemento</label>
+            <input type="text" name="complemento" id="complemento">
+
+            <label for="referencia">Ponto de referência</label>
+            <textarea name="referencia" id="referencia" cols="20" rows="6"
+                placeholder="Escreva o que achar necessário"></textarea>
+
+            <div class="btnCadastrar">
+                <input type="submit" id="submit" value="Criar minha conta">
+            </div>
+
+        </form>
+
+        <sub>
+            Verifique a nossa <a href="#"><b>política de privacidade</b></a>.<br>
+            Ao criar seu cadastro, você estará concordando.
+            <br>
+            Já tem cadastro? <a href="entrar.html"><b>Entrar</b></a>
+        </sub>
+    </div>
+
+    <!--              FOOOTER               -->
+
+    <footer>
+        <div class="footer1">
+            <h2>Guitar Center</h2>
+            <p>
+                A Guitar Center oferece instrumentos e acessórios de qualidade para músicos de todos os níveis, do pior
+                ao menos pior.
+            </p>
+        </div>
+
+        <div class="footer2">
+            <h2>Contato</h2>
+            <p>contato@guitarcenter.com.br</p>
+            <p>100 Music St, California, CA, 01234, USB</p>
+            <p>(213) 555-7489</p>
+        </div>
+
+        <div class="footer3">
+            <h2>Redes sociais</h2>
+            <ul>
+                <a href="#" target="_blank">
+                    <li><i class="fa-fw fa-brands fa-facebook"></i></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><i class="fa-fw fa-brands fa-bluesky"></i></li>
+                </a>
+                <a href="#" target="_blank">
+                    <li><i class="fa-fw fa-solid fa-hashtag"></i></li>
+                </a>
+            </ul>
+        </div>
+
+        <div class="footer4">
+            <hr>
+            <p>
+                © Guitar Center, 2024. Todos os direitos não-reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCRIPT JS -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
